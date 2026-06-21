@@ -1,0 +1,43 @@
+# Environment
+venv/
+env/
+.env
+*.pyc
+__pycache__/
+*.egg-info/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+.DS_Store?
+._*
+
+# Streamlit
+.streamlit/
+streamlit_cached/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Data
+data/*.csv
+data/*.xlsx
+*.pkl
+*.joblib
+
+# Logs
+logs/
+*.log
+
+# Models (if not version controlled)
+# models/*.h5
+# models/*.pkl
+# models/*.json

@@ -1,0 +1,24 @@
+{
+    "num_columns": [
+        "Age",
+        "Tenure",
+        "Usage Frequency",
+        "Support Calls",
+        "Payment Delay",
+        "Total Spend",
+        "Last Interaction"
+    ],
+    "ordinal_categories": {
+        "Contract Length": [
+            "Monthly",
+            "Quarterly",
+            "Annual"
+        ],
+        "Subscription Type": [
+            "Basic",
+            "Standard",
+            "Premium"
+        ]
+    },
+    "input_dim": 11
+}

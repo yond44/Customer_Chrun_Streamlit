@@ -1,0 +1,71 @@
+{
+  "model_type": "Artificial Neural Network (ANN)",
+  "project": "Mini Project 2",
+  "task": "Customer Churn Prediction",
+  "dataset": "Telecom Customer Churn Dataset",
+  "input_dim": 37,
+  "num_columns": [
+    "Customer_Age",
+    "Monthly_Charges",
+    "Total_Charges",
+    "Customer_Service_Calls",
+    "Tenure"
+  ],
+  "ordinal_categories": {
+    "Contract_Length": ["Monthly", "Quarterly", "Annual"],
+    "Subscription_Type": ["Basic", "Standard", "Premium"]
+  },
+  "architecture": {
+    "layers": [
+      {"name": "Input", "units": 37, "activation": "none"},
+      {"name": "Dense", "units": 64, "activation": "relu", "dropout": 0.3},
+      {"name": "Dense", "units": 32, "activation": "relu", "dropout": 0.2},
+      {"name": "Dense", "units": 16, "activation": "relu", "dropout": 0.0},
+      {"name": "Dense", "units": 1, "activation": "sigmoid"}
+    ]
+  },
+  "training": {
+    "optimizer": "Adam",
+    "loss_function": "binary_crossentropy",
+    "batch_size": 256,
+    "epochs": 1000,
+    "early_stopping_patience": 7,
+    "lr_reduction_factor": 0.5
+  },
+  "performance": {
+    "train_accuracy": 0.9800,
+    "test_accuracy": 0.9798,
+    "train_precision": 0.9809,
+    "test_precision": 0.9807,
+    "train_recall": 0.9798,
+    "test_recall": 0.9798,
+    "train_f1": 0.9799,
+    "test_f1": 0.9799
+  },
+  "comparison_with_random_forest": {
+    "random_forest_accuracy": 1.0000,
+    "ann_accuracy": 0.9800,
+    "winner": "Random Forest (Perfect performance)",
+    "ann_advantage": "Better scalability",
+    "rf_advantage": "Better interpretability"
+  },
+  "preprocessing": {
+    "missing_value_strategy": "Mode imputation for categorical, Median for numeric",
+    "outlier_removal": "Z-score method (3-sigma rule)",
+    "encoding": {
+      "ordinal": ["Contract_Length", "Subscription_Type"],
+      "onehot": ["Gender", "Internet_Service"]
+    },
+    "scaling": "StandardScaler"
+  },
+  "class_distribution": {
+    "no_churn": 0.82,
+    "churn": 0.18,
+    "imbalance_handling": "class_weight='balanced'"
+  },
+  "total_samples": 304752,
+  "train_samples": 314547,
+  "test_samples": 65305,
+  "date_trained": "2024-01-01T00:00:00",
+  "created_by": "Yonda Eko Dirman"
+}
