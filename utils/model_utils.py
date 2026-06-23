@@ -17,12 +17,12 @@ def load_random_forest_artifacts():
     log_status("Loading Random Forest artifacts...")
     
     try:
-        # Load model
+
         log_status("  → Loading Customer_churn_rf_model.pkl")
         rf_model = joblib.load('models/Customer_churn_rf_model.pkl')
         log_status("     ✅ RF Model loaded", "SUCCESS")
         
-        # Load encoders
+
         log_status("  → Loading encoder_ordinal.pkl")
         encoder_ordinal = joblib.load('models/encoder_ordinal.pkl')
         log_status("     ✅ Encoder ordinal loaded", "SUCCESS")
@@ -31,12 +31,11 @@ def load_random_forest_artifacts():
         encoder_ohe = joblib.load('models/encoder_ohe.pkl')
         log_status("     ✅ Encoder OHE loaded", "SUCCESS")
         
-        # Load scaler
+  
         log_status("  → Loading scaler.pkl")
         scaler = joblib.load('models/scaler.pkl')
         log_status("     ✅ Scaler loaded", "SUCCESS")
         
-        # Load metadata
         log_status("  → Loading model_metadata.json")
         metadata_path = 'models/model_metadata.json'
         
@@ -68,10 +67,6 @@ def load_random_forest_artifacts():
 
 @st.cache_resource
 def load_ann_artifacts():
-    """
-    Load ANN model dan preprocessing artifacts
-    Returns: (model, pipeline, config_dict)
-    """
     log_status("Loading ANN artifacts...")
     
     try:
