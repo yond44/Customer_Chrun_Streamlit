@@ -1,0 +1,34 @@
+{
+  "model_type": "RandomForestClassifier",
+  "cv_f1_mean": 0.9998,
+  "cv_f1_std": 0.0,
+  "test_f1": 1.0,
+  "test_accuracy": 0.9998,
+  "features": [
+    "Subscription Type",
+    "Contract Length",
+    "Gender_Female",
+    "Gender_Male",
+    "Age",
+    "Tenure",
+    "Usage Frequency",
+    "Support Calls",
+    "Payment Delay",
+    "Total Spend",
+    "Last Interaction"
+  ],
+  "feature_importance": {
+    "Subscription Type": 0.00173576752728676,
+    "Contract Length": 0.13380367748039745,
+    "Gender_Female": 0.017209781017090423,
+    "Gender_Male": 0.015121701367720565,
+    "Age": 0.13343064535383348,
+    "Tenure": 0.010138029703097795,
+    "Usage Frequency": 0.004088880455593707,
+    "Support Calls": 0.30589731450928465,
+    "Payment Delay": 0.1171531938269641,
+    "Total Spend": 0.21307934356500985,
+    "Last Interaction": 0.048341665193721274
+  },
+  "date_trained": "2026-06-21T08:13:58.861018"
+}
