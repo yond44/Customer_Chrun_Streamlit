@@ -20,8 +20,8 @@ Thumbs.db
 .streamlit/
 streamlit_cached/
 
-.ipynb_checkpoints/
-*.ipynb
+# .ipynb_checkpoints/
+# *.ipynb
 
 
 data/*.csv
