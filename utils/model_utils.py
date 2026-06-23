@@ -16,7 +16,7 @@ def load_random_forest_artifacts():
         return rf_model, encoder_ordinal, encoder_ohe, scaler, rf_meta
     except FileNotFoundError as e:
         st.error(f"❌ File Random Forest tidak ditemukan: {str(e)}")
-        return None, None, None, None
+        return None, None, None, None, None
 
 
 @st.cache_resource
