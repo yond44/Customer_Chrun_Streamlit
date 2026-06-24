@@ -131,7 +131,7 @@ Best Use:         Predictions, business decisions, deployment
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/churn-prediction-app.git
+git clone https://github.com/yond44/churn-prediction-app.git
 cd churn-prediction-app
 ```
 
@@ -592,14 +592,6 @@ Application: Streamlit Churn Prediction System
 
 ---
 
-## 📞 Contact
-
-For questions or improvements:
-- 📧 Email: [your email]
-- 🐙 GitHub: [your github]
-- 💼 LinkedIn: [your linkedin]
-
----
 
 <div align="center">
 
